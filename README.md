@@ -9,6 +9,8 @@ For production ready code , following steps could be taken
 5. Load testing the code when multiple threads work on the transfer and sending notifications will help . Tools like Jmeter can be used to simulate .
 6. Negative testing should be done to check if the code is behaving properly . 
 7. End to end integration tests needs to be done to verify the functionality. 
+8. Later on if needed, we can have different microservices like one for Notification , one for Accounts and deploy them with Spring cloud so that 
+Netflix Eureka takes care of the instances and load balacing could be achieved using Netflix Ribbon. But this all depends upon the complexity involved later .
 
 
 Assumptions in the code 
